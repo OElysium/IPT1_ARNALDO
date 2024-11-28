@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/sidenav.css">
+	<link rel="stylesheet" href="./css/slideshow.css">
+
+	<!-- FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<title>My Portfolio</title>
+</head>
+<body>
+	<nav class="sidenav">
+		<a href="#aboutMe">"Who Are You?"</a>
+		<a href="#projects">Projects</a>
+		<a href="#contactMe">Contact Me</a>
+	</nav>
+	
+	<!--
+		ABOUT ME
+	-->
+	<div id="aboutMe">
+		<img class="main-pic" src="./img/cat.png">
+		<p class="comments">(My cat btw)</p>
+		<h1>Who am I?<h1>
+		<p>
+			I'm Aero Louise C. Arnaldo. I like making games (sometimes 😆), I mostly program in Python 🐍, I like watching streamers like 
+			Sinatraa, Nadeshot, xQc, and Pirate Software, I'm taking BSIT course in City of Malabon University, I'm
+			currently a 3rd year. I make games in Pygame (Community Edition). I also play games like Minecraft ⛏️
+			and VALORANT 🔫, sometimes Disco Elysium!🪩
+		</p>
+	</div>
+
+	<!--
+		PROJECTS
+	-->
+	<div id="projects">
+		<!-- SIDESHOOTER-->
+		<div>
+			<div class="slideshow-container">
+				<!-- Slides -->
+				<div class="mySlides1 fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="./img/side_1.png" style="width:100%">
+				</div>
+				<div class="mySlides1 fade">
+					<div class="numbertext">2 / 3</div>
+					<img src="./img/side_2.png" style="width:100%">
+				</div>
+				<div class="mySlides1 fade">
+					<div class="numbertext">3 / 3</div>
+					<img src="./img/side_3.png" style="width:100%">
+				</div>
+				<!-- Navigation -->
+				<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+			</div>
+			<!-- Dots -->
+			<div class="mySlides1-dots" style="text-align:center">
+				<span class="dot" onclick="currentSlide(1, 0)"></span>
+				<span class="dot" onclick="currentSlide(2, 0)"></span>
+				<span class="dot" onclick="currentSlide(3, 0)"></span>
+			</div>
+		</div>
+
+		<!-- <p class="comments">(My cat btw)</p> -->
+		<h1>Side Shooter<h1>
+		<p>
+			This was supposed to be a simple exercise made in Python with Pygame-CE
+			<i>(Community Edition)</i> that's a sideshooter in Python Crash Course by Matthes E. <i> (great book btw)</i>,
+			Chapter 13, that needs to have a game over mechanic, but I got a little carried away, I added particles and
+			sounds to the game but still no game over mechanic. I got the game assets in 
+			<a href="https://opengameart.org/">OpenGameArt.Org</a>, which is a site for free game assets. 
+		</p>
+	</div>
+		
+	<!-- ALIEN INVADERS -->
+	<div id="projects">
+		<div class="slideshow-container">
+				<!-- Slides -->
+				<div class="mySlides2 fade">
+						<div class="numbertext">1 / 3</div>
+						<img src="./img/alien_1.png" style="width:100%">
+				</div>
+				<div class="mySlides2 fade">
+						<div class="numbertext">2 / 3</div>
+						<video src="./vid/alien_vid.webm" style="width:100%" autoplay></video>
+				</div>
+				<div class="mySlides2 fade">
+						<div class="numbertext">3 / 3</div>
+						<img src="./img/alien_2.png" style="width:100%">
+				</div>
+				<!-- Navigation -->
+				<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+		</div>
+		<!-- Dots -->
+		<div class="mySlides2-dots" style="text-align:center">
+				<span class="dot" onclick="currentSlide(1, 1)"></span>
+				<span class="dot" onclick="currentSlide(2, 1)"></span>
+				<span class="dot" onclick="currentSlide(3, 1)"></span>
+		</div>
+		<h1>Alien Invaders</h1>
+		<p>
+			This is a clone project of Alien Invasion that I've been doing in Python with Pygame-CE
+			<i>(Community Edition)</i> with Python Crash Course by Matthes E. and the assets for the ships are from also from 
+			<a href="https://opengameart.org/">OpenGameArt.Org</a>
+		</p>
+	</div>
+</div>
+
+	<!--
+		CONTACT ME
+	-->
+	<hr style="width: 500px; margin-right: 430px;">
+	<div id="contactMe">
+		<img src="./img/gmail.png" style="width: 100px; height: 100px; object-fit: scale-down;">
+		<b>Gmail:</b>
+		<p>aeroarnaldo0329@gmail.com</p>  
+		
+		<br>
+		<img src="./img/facebook.png" style="width: 100px; height: 100px; object-fit: scale-down;">
+		<b>Facebook:</b>
+		<p>Aero Louise Arnaldo</p>  
+	
+	</div>
+
+	<script src="./js/main.js"></script>
+	<!-- <script src="../JS/moreSlides.js"></script> -->
+</body>
+</html>
